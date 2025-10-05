@@ -1,0 +1,9 @@
+label {
+    align-self: start;
+    margin-left: 10px;
+}
+
+input {
+    margin-left: 10px;
+    align-items: center;
+}
