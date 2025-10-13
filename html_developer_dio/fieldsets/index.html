@@ -14,11 +14,31 @@
             display: inline-block;
             padding-right: 5px;
         }
+        fieldset {
+            padding: 10px;
+            width: 80%;
+        }
+        #dados {
+            border: 2px dashed blue;
+            background-color: antiquewhite;
+            border-radius: 10px;
+        }
+        #endereco {
+            border: 2px groove red;
+            background-color: chocolate;
+            border-radius: 20px;
+        }
+        #contato {
+            border: 2px groove rgb(51, 255, 0);
+            background-color: azure;
+            border-radius: 30px;
+        }
     </style>
 </head>
 <body>
     <h1>Formulário de Cadastro</h1>
-    <fieldset>
+    <fieldset id="dados">
+        <legend>Dados Pessoais</legend>
         <div class="row">
             <label>Nome:</label> <input type="text">
             <label>E-mail:</label> <input type="text">
@@ -28,29 +48,32 @@
             <label>Empresa:</label> <input type="text">
         </div>
     </fieldset>
-
-    <div class="row">
-        <label>Endereço:</label> <input type="text">
-        <label>Número:</label> <input type="text" style="width: 30px; height: 10px;">
-    </div>
-
-    <div class="row">
-        <label>Bairro:</label> <input type="text">
-    </div>
-
-    <div class="row">
-        <label>Cidade/UF:</label> <input type="text">
-    </div>
-
-    <div class="row">
-        <label>Celular:</label> <input type="text">
-        <label>Whatsapp:</label> <input type="text">
-    </div>
-
-    <div class="row">
-        <label>LinkedIn:</label> <input type="text">
-        <label>GitHub:</label> <input type="text">
-    </div>
+    <br>
+    <fieldset id="endereco">
+        <legend>Endereço</legend>
+        <div class="row">
+            <label>Endereço:</label> <input type="text">
+            <label>Número:</label> <input type="text" style="width: 30px; height: 10px;">
+        </div>
+        <div class="row">
+            <label>Bairro:</label> <input type="text">
+        </div>
+        <div class="row">
+            <label>Cidade/UF:</label> <input type="text">
+        </div>
+    </fieldset>
+    <br>
+    <fieldset id="contato">
+        <legend>Informações de Contato</legend>
+        <div class="row">
+            <label>Celular:</label> <input type="text">
+            <label>Whatsapp:</label> <input type="text">
+        </div>
+        <div class="row">
+            <label>LinkedIn:</label> <input type="text">
+            <label>GitHub:</label> <input type="text">
+        </div>
+    </fieldset>
 
     <div class="row">
         <br>
